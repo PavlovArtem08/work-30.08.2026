@@ -5,6 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
+    <style>
+        /* специфичность  = 1 */
+        p {
+            /* color: blue;
+            color: rgba(50, 15, 255,);
+            color: rgba(50, 15, 255, 0.8); */
+            /* A = 10
+            B = 11
+            C = 12
+            D = 13
+            E = 14
+            F = 15 
+
+            FF = 15 * 16^1 + 15 * 16^0
+            */
+            color: #0000ff;
+            font-size: 24px;
+        }
+
+        /* специфичность  = 10 */
+        .text {
+            color: red;
+        }
+
+        .text2 {
+            color: purple;
+        }
+
+        /* специфичность  = 100 */
+        #text {
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,7 +87,8 @@
         </article>
         <article>
             <h2> Домашние рыбок</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta earum cupiditate in
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta earum cupiditate
+                in
                 perferendis
                 amet nihil esse rerum asperiores! Nemo perspiciatis fugit ut neque, eveniet porro labore maiores debitis
                 eaque.</p>
@@ -70,7 +104,8 @@
         </article>
         <article>
             <h2> Про питухов</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta earum cupiditate in
+            <p class="text" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta earum
+                cupiditate in
                 perferendis
                 amet nihil esse rerum asperiores! Nemo perspiciatis fugit ut neque, eveniet porro labore maiores debitis
                 eaque.</p>
@@ -78,7 +113,8 @@
         </article>
         <article id="nutrias">
             <h2> Про нутрии</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta earum cupiditate in
+            <p class="text text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta earum
+                cupiditate in
                 perferendis
                 amet nihil esse rerum asperiores! Nemo perspiciatis fugit ut neque, eveniet porro labore maiores debitis
                 eaque.</p>
