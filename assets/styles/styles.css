@@ -1,21 +1,33 @@
+.html {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* специфичность  = 1 */
 p {
     /*цвет текста*/
-    color: #0000ff;
+    /* color: #0000ff; */
     /*размер шрифта*/
     font-size: 24px;
 }
 
-/* специфичность  = 10 */
-.text {
-    /*цвет заливки*/
+.article {
+    font-size: 30px;
     background-color: #333333;
+    color: #ffffff;
+    /* цвет рамки */
+    border: 1px solid green;
+}
+
+/* специфичность  = 10 */
+.article-text {
+    /*цвет заливки*/
+    /* background-color: #333333; */
     /*цвет текста*/
-    color: red;
+    /* color: red; */
     /*межстрочный интервал*/
     line-height: 1.5;
     /*размер шрифта*/
-    font-size: 30px;
+    /* font-size: 30px; */
     /*жирность шрифта*/
     font-weight: bold;
     /*курсив*/
@@ -27,31 +39,37 @@ p {
     /* преобразование текста в верхний регистр */
     text-transform: uppercase;
     /* подчеркивание */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* shorthand для text-decoration */
-    text-decoration: underline wavy #ff0000;
+    /* text-decoration: underline wavy #ff0000; */
     /* цвет подчеркивания */
-    text-decoration-color: #ff0000;
+    /* text-decoration-color: #ff0000; */
     /* стиль подчеркивания */
-    text-decoration-style: wavy;
-
+    /* text-decoration-style: wavy; */
+    /* сброс рамки */
+    border: unset;
 }
 
 /* специфичность  = 100 */
 #text {
-    color: green;
+    /* color: green; */
 }
 
 .link {
-    background-color: #21ae21;
-    font-size: 30px;
+    /* сброс размера шрифта */
+    /* font-size: initial;  */
+    /* наследуем цвет от родителя */
+    color: inherit;
     /* убираем подчеркивание */
     text-decoration: none;
 }
 
-.heading {
+.article-heading {
     /* выравнивание текста по центру */
     text-align: center;
+    /* font-size: 30px; */
+    /* наследуем цвет рамки от родителя */
+    border: inherit;
 }
 
 .img {}
