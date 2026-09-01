@@ -1,31 +1,65 @@
 /* специфичность  = 1 */
 p {
-    /* color: blue;
-            color: rgba(50, 15, 255,);
-            color: rgba(50, 15, 255, 0.8); */
-    /* A = 10
-            B = 11
-            C = 12
-            D = 13
-            E = 14
-            F = 15 
-
-            FF = 15 * 16^1 + 15 * 16^0
-            */
+    /*цвет текста*/
     color: #0000ff;
+    /*размер шрифта*/
     font-size: 24px;
 }
 
 /* специфичность  = 10 */
 .text {
+    /*цвет заливки*/
+    background-color: #333333;
+    /*цвет текста*/
     color: red;
-}
+    /*межстрочный интервал*/
+    line-height: 1.5;
+    /*размер шрифта*/
+    font-size: 30px;
+    /*жирность шрифта*/
+    font-weight: bold;
+    /*курсив*/
+    font-style: italic;
+    /*семейство шрифтов*/
+    font-family: 'Times New Roman', Arial', Roboto', sans-serif;
+    /* выравнивание текста по ширине */
+    text-align: justify;
+    /* преобразование текста в верхний регистр */
+    text-transform: uppercase;
+    /* подчеркивание */
+    text-decoration: underline;
+    /* shorthand для text-decoration */
+    text-decoration: underline wavy #ff0000;
+    /* цвет подчеркивания */
+    text-decoration-color: #ff0000;
+    /* стиль подчеркивания */
+    text-decoration-style: wavy;
 
-.text2 {
-    color: purple;
 }
 
 /* специфичность  = 100 */
 #text {
     color: green;
 }
+
+.link {
+    background-color: #21ae21;
+    font-size: 30px;
+    /* убираем подчеркивание */
+    text-decoration: none;
+}
+
+.heading {
+    /* выравнивание текста по центру */
+    text-align: center;
+}
+
+.img {}
+
+.container {}
+
+.main-heading {}
+
+.sub-heading {}
+
+.footer-text {}
