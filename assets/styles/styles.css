@@ -1,3 +1,10 @@
+* {
+    /* учитываем рамку и внутренний отступ в ширину и высоту блока */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .html {
     font-family: 'Roboto', sans-serif;
 }
@@ -14,6 +21,12 @@ p {
 .article {
     /* превращаем span в строчно-блочный элемент */
     display: inline-block;
+
+    /* превращаем span в блочный элемент */
+    /* display: block; */
+
+    /* превращаем span в строчный элемент */
+    /* display: inline; */
 
     /* ширина блока */
     width: 500px;
@@ -43,7 +56,7 @@ p {
     /* padding: 30px 60px; */
 
     /* верх, горизонталь, низ */
-    padding: 30px 60px 90px;
+    padding: 10px 20px 30px;
 
     /* цвет рамки */
     border: 20px solid green;
@@ -52,13 +65,16 @@ p {
     /* border-left-width: 0;  */
 
     /* левая рамка */
-    border-left: 20px dotted red;
+    /* border-left: 20px dotted red; */
 
     /* нижняя рамка */
     border-bottom-color: yellow;
 
     /* внешний отступ */
-    margin: 10px;
+    /* margin: 10px; */
+
+    /* верхний внешний отступ */
+    /* margin-top: 10px; */
 
     /* top, right, bottom, left */
     margin: 0 0 10px 0;
