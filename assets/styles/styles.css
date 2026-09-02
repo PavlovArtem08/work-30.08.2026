@@ -12,9 +12,14 @@ p {
 }
 
 .article {
-    font-size: 30px;
-    background-color: #333333;
-    color: #ffffff;
+    /* превращаем span в строчно-блочный элемент */
+    display: inline-block;
+
+    /* ширина блока */
+    width: 500px;
+
+    /* высота блока */
+    height: 700px;
 
     /* внутренний отступ */
     /* padding: 100px; */
@@ -58,14 +63,9 @@ p {
     /* top, right, bottom, left */
     margin: 0 0 10px 0;
 
-    /* ширина блока */
-    width: 500px;
-
-    /* высота блока */
-    height: 700px;
-
-    /* превращаем span в строчно-блочный элемент */
-    display: inline-block;
+    font-size: 30px;
+    background-color: #333333;
+    color: #ffffff;
 
 }
 
@@ -109,6 +109,8 @@ p {
 
     /* стиль подчеркивания */
     /* text-decoration-style: wavy; */
+
+    font: italic bold 30px 'Times New Roman', Arial', Roboto', sans-serif;
 
     /* сброс рамки */
     border: unset;
