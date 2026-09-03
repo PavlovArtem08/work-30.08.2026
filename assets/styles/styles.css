@@ -13,7 +13,7 @@
 }
 
 .tall-img {
-    object-position: cover;
+    object-position: 0 -50px;
 }
 
 .smoker-img {
@@ -23,7 +23,7 @@
     background-image: url('../images/img-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0 -50px;
     border-radius: 50%;
 }
 
