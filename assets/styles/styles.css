@@ -180,32 +180,31 @@ p {
 display: block;
 }*/
 
-div {
-    width: 400px;
-    padding: 20px;
-    color: black;
-    border: 5px solid red;
-    font-size: 30px;
-}
-
 .class-1 {
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
-.class-2 {
-    margin-left: auto;
-    /* margin-right: auto; */
-    margin-top: -10px;
-    margin-bottom: 100px;
+img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+
+    /* сохраняем пропорции изображения, обрезая лишнее */
+    object-fit: cover;
+
+    /* сохраняем пропорции изображения, не обрезая лишнее */
+    object-position: center;
+
 }
 
-.class-3 {
-    margin: 30px auto;
+.wide-img {}
 
+.tall-img {
+    object-position: 0 0;
 }
 
-.img {}
+/* .img {}
 
 .container {}
 
@@ -213,4 +212,4 @@ div {
 
 .sub-heading {}
 
-.footer-text {}
+.footer-text {} */
