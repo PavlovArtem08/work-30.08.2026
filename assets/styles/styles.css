@@ -31,27 +31,6 @@
     background-color: lightblue;
     font-size: 30px;
     border: 10px solid red;
-    padding: 20px;
-    height: 400px;
-    overflow: auto;
-}
-
-.inner {
-    border: 5px solid white;
-    padding: 10px;
-    background-color: green;
-}
-
-button {
-    max-width: 200px;
-    max-height: 60px;
-
-    /* скрываем все, что не помещается в блок */
-    overflow: hidden;
-
-    /* скрываем перенос текста на новую строку */
-    white-space: nowrap;
-
-    /* добавляем многоточие в конце строки, если текст не помещается */
-    text-overflow: ellipsis;
+    width: 50vw;
+    height: 50vh;
 }
