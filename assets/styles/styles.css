@@ -5,63 +5,16 @@
     padding: 0;
 }
 
-.img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+/* 
+vh - viewport height
+vw - viewport width
 
-.tall-img {
-    object-position: 0 -50px;
-}
-
-.smoker-img {
-    height: 400px;
-    width: 400px;
-    /* background-color: red; */
-    background-image: url('../images/img-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -50px;
-    border-radius: 50%;
-}
-
-
-
-.outer {
-    background-color: lightblue;
-    font-size: 30px;
-    border: 10px solid red;
-    width: 50vw;
-    height: 50vh;
-}
+1vmin - 1% от минимальной стороны вьюпорта
+1vmax - 1%  от максимальной стороны вьюпорта
+*/
 
 div {
+    width: 100vmin;
+    height: 100vmin;
     border: 10px solid;
-    padding: 20px;
-}
-
-.hidden-1 {
-    display: none;
-}
-
-.hidden-2 {
-    /* задает уровень прозрачности элемента целиком */
-    opacity: 0;
-}
-
-.hidden-3 {
-    /* управляет видимостью элемента,
-    скрывая или показывая его без удаления из структуры документа */
-    visibility: hidden;
-}
-
-.hidden-4 {
-    height: 0;
-
-    /* управляет тем,
-    как браузер поступает с содержимым элемента,
-    если оно не помещается в его заданные размеры (ширину и высоту) */
-    overflow: hidden;
 }
