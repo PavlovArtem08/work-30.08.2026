@@ -1,8 +1,8 @@
 * {
     /* учитываем рамку и внутренний отступ в ширину и высоту блока */
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 /* 
@@ -13,8 +13,23 @@ vw - viewport width
 1vmax - 1%  от максимальной стороны вьюпорта
 */
 
-div {
-    width: 100vmin;
-    height: 100vmin;
-    border: 10px solid;
+ul {
+    /*
+        это универсальное сокращенное свойство (shorthand),
+        которое позволяет задать все параметры маркера списка за один раз
+        list-style
+        
+        задаёт внешний вид маркера (точки, цифры или буквы) для элементов списка
+        list-style-type
+
+        определяет положение маркера или цифры относительно текста в элементах списка
+        list-style-position
+
+        устанавливает графическое изображение в качестве маркера для элементов списка
+        list-style-image */
+
+    /* list-style: '\00AE' inside;
+    list-style: url('https: //ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Christos_Acheiropoietos.jpg') */
+
+    list-style-type: none;
 }
