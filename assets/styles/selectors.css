@@ -18,3 +18,26 @@
 [title$="end"] {
     background-color: aqua;
 }
+
+a[href="https//google.com"][title]#first.class1.class2 {
+    background-color: darkkhaki;
+    color: white;
+}
+
+div p {
+    color: rgb(194, 130, 2);
+}
+
+div>p,
+div>p>a {
+    font-size: 30px;
+    color: yellow;
+}
+
+p~p {
+    font-weight: bold;
+}
+
+p+p {
+    font-style: italic;
+}
