@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 500px;
+    margin: 0 auto;
+    background-color: lightseagreen;
+    height: 300vh;
+}
+
+section {
+    width: 400px;
+    margin: 0 auto;
+    background-color: coral;
+    height: 100vh;
+}
+
+.box {
+    --size: 80px;
+    border: 5px solid black;
+    padding: 10px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.pos-static {
+    position: static;
+}
+
+.pos-relative {
+    position: relative;
+    background-color: yellow;
+    top: 10px;
+    left: var(--size);
+}
+
+.pos-relative-container,
+.pos-relative-container-2 {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    background-color: blue;
+}
+
+.pos-fixed {
+    /* width: initial;
+    height: initial; */
+    position: fixed;
+    background-color: lime;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    left: 0;
+    right: 0;
+    top: 0;
+    /* bottom: 0; */
+}
+
+.pos-sticky {
+    position: sticky;
+    top: 40px;
+    left: 30px;
+}
+
+.pos-1 {
+    bottom: -100px;
+    right: 0;
+    z-index: 10;
+}
+
+.pos-2 {
+    bottom: -80px;
+    right: 10px;
+}
+
+.pos-3 {
+    bottom: -120px;
+    right: 30px;
+}
