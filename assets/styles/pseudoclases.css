@@ -27,3 +27,43 @@ button {
 .btn:active {
     color: red;
 }
+
+.btn:focus {
+    border-color: red;
+    outline: none;
+}
+
+.interactive-section:focus {
+    background-color: aquamarine;
+}
+
+.interactive-section p:first-child {
+    color: red;
+}
+
+.interactive-section p:last-child {
+    color: purple;
+}
+
+/* .interactive-section p:nth-child(2n) {
+    color: lightgreen;
+} */
+.interactive-section p:nth-child(even) {
+    color: lightgreen;
+}
+
+/* .interactive-section p:nth-child(2n + 1) {
+    color: brown;
+} */
+
+.interactive-section p:nth-child(odd) {
+    color: brown;
+}
+
+/* 
+.interactive-section p:nth-child(2),
+.interactive-section p:nth-child(4),
+.interactive-section p:nth-child(5),
+.interactive-section p:nth-child(8), {
+    color: lightgreen;
+} */
