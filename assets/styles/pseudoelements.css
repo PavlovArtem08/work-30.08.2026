@@ -4,30 +4,9 @@
     text-align: center;
 }
 
-.text {}
-
-.stylized,
-.text::first-letter {
-    font-size: 80px;
-    color: red;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-}
-
-.text::first-line {
-    background-color: yellow;
-}
-
-.text::selection {
-    background-color: lightcoral;
-    color: aliceblue;
-}
-
-input::placeholder {
-    color: red;
-    font-style: italic;
-    font-weight: bold;
+.text {
+    margin: 20px;
+    position: relative;
 }
 
 .text::before,
@@ -35,5 +14,16 @@ input::placeholder {
     display: inline-block;
     content: open-quote;
     background-color: aqua;
-    font-size: 30px;
+    /* font-size: 30px; */
+    position: absolute;
+    top: 5px;
+}
+
+.text::before {
+    content: open-quote;
+    right: 100%;
+}
+
+.text::after {
+    content: close-quote;
 }
