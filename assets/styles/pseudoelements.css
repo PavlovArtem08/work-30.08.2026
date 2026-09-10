@@ -1,0 +1,39 @@
+.main-heading {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.text {}
+
+.stylized,
+.text::first-letter {
+    font-size: 80px;
+    color: red;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.text::first-line {
+    background-color: yellow;
+}
+
+.text::selection {
+    background-color: lightcoral;
+    color: aliceblue;
+}
+
+input::placeholder {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.text::before,
+.text::after {
+    display: inline-block;
+    content: open-quote;
+    background-color: aqua;
+    font-size: 30px;
+}
