@@ -17,6 +17,7 @@
 
 .nav-link {
     display: block;
+    position: relative;
     padding: 10px 20px;
     border: 2px solid;
     border-radius: 15px;
@@ -27,6 +28,22 @@
 
     /* propperty duration timing-func delay */
     transition: background-color 0.5s ease 0s, color 1.5s ease-in-out 0s;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    top: 3px;
+    left: 20px;
+    height: 3px;
+    background: red;
+
+    transition: width 0.4s ease-in;
+}
+
+.nav-link:hover::before {
+    width: 60%;
 }
 
 .nav-link:hover {
