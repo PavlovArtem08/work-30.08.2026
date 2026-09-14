@@ -42,7 +42,20 @@
     transition: width 0.4s ease-in;
 }
 
-.nav-link:hover::before {
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    bottom: 3px;
+    right: 20px;
+    height: 3px;
+    background: red;
+
+    transition: width 0.4s ease-in;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
     width: 60%;
 }
 
