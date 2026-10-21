@@ -7,7 +7,7 @@
     /* flex-direction: column; */
 
     /* является сокращенной записью для двух свойств */
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
 
     /* управляет выравниванием элементов вдоль главной оси */
     justify-content: center;
@@ -22,28 +22,19 @@
 .item {
     padding: 20px;
     border: 5px solid red;
+    /* max-width: 20px;
+    min-width: 50px; */
     background-color: green;
     color: white;
     font-size: 40px;
     text-align: center;
-}
-
-.order {
-    /* пренимает целое число, которое определяет порядок, 
-    в котором элементы будут отображаться в контейнере 
-    flex. Элементы с меньшими значениями order будут отображаться первыми.
-     По умолчанию все элементы имеют order: 0. */
-    order: -1;
-}
-
-.align-self {
-    /* позволяет переопределить 
-    значение align-items для конкретного flex-элемента */
-    align-self: flex-start;
+    
+    /* определяет начальный размер flex-элемента 
+        перед распределением свободного пространства */
+    flex-basis: 300px;
 }
 
 .flex-basis {
-    /* определяет начальный размер flex-элемента 
-    перед распределением свободного пространства */
-    flex-basis: 200px;
+
+    /* min-width: 2000px; */
 }
