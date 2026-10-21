@@ -18,12 +18,9 @@
     /* управляет тем,будут ли гибкие элементы */
     /* flex-wrap: wrap; */
 
-
-
 }
 
 .item {
-    margin: auto;
     padding: 20px;
     border: 5px solid red;
     background-color: green;
@@ -40,6 +37,9 @@
     order: -1;
 }
 
+.align-self {
+    /* позволяет переопределить 
+    значение align-items для конкретного flex-элемента */
+    align-self: flex-start;
 
-    
 }
