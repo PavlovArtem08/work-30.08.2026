@@ -4,7 +4,10 @@
     border: 10px solid black;
 
     /*направление оси */
-    flex-direction: column;
+    /* flex-direction: column; */
+
+    /* является сокращенной записью для двух свойств */
+    flex-flow: row nowrap;
 
     /* управляет выравниванием элементов вдоль главной оси */
     justify-content: center;
@@ -13,35 +16,14 @@
     align-items: center;
 
     /* управляет тем,будут ли гибкие элементы */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
-    /* является сокращенной записью для двух свойств */
-    flex-flow: row wrap;
 
-    /* управляет распределением свободного пространства 
-    между и вокруг строк (или столбцов) во флекс-контейнере */
-    align-content: center;
 
-    /* task 1 */
-    /* flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start; */
-
-    /* task 2 */
-    /* flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end; */
-
-    /* task 3 */
-    /* flex-direction: column-reverse;
-    justify-content: center;
-    align-items: flex-start; */
 }
 
-.item,
-.item-container {
-    /* width: 60px;
-    height: 60px; */
+.item {
+    margin: auto;
     padding: 20px;
     border: 5px solid red;
     background-color: green;
@@ -50,10 +32,14 @@
     text-align: center;
 }
 
-/* .item-container {
-    display: flex;
-    height: 300px;
-    border: 5px solid blue;
-    background-color: limegreen;
-    align-items: center;
-} */
+.order {
+    /* пренимает целое число, которое определяет порядок, 
+    в котором элементы будут отображаться в контейнере 
+    flex. Элементы с меньшими значениями order будут отображаться первыми.
+     По умолчанию все элементы имеют order: 0. */
+    order: -1;
+}
+
+
+    
+}
