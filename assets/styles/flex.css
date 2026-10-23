@@ -7,7 +7,7 @@
     /* flex-direction: column; */
 
     /* является сокращенной записью для двух свойств */
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
 
     /* управляет выравниванием элементов вдоль главной оси */
     justify-content: center;
@@ -22,19 +22,14 @@
 .item {
     padding: 20px;
     border: 5px solid red;
-    /* max-width: 20px;
-    min-width: 50px; */
     background-color: green;
     color: white;
     font-size: 40px;
     text-align: center;
     
-    /* определяет начальный размер flex-элемента 
-        перед распределением свободного пространства */
-    flex-basis: 300px;
+    /* свойство flex-grow определяет способность 
+        flex-элемента расти, если это необходимо */
+    flex-grow: 1;
 }
 
-.flex-basis {
-
-    /* min-width: 2000px; */
-}
+.grow {}
