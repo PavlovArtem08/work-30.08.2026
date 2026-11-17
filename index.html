@@ -62,6 +62,18 @@
         <label for="textarea">Post your comment</label>
         <textarea name="textarea" id="" cols="30" rows="10" maxlength="5"></textarea>
 
+        <datalist id="city-list">
+            <option value="Kyiv">Kyiv</option>
+            <option value="lviv">lviv</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Odesa">Odesa</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Zaporizhzhia">Zaporizhzhia</option>
+            <option value="Kryvyi Rih">Kryvyi Rih</option>
+        </datalist>
+
+        <input type="text" name="city-2" list="city-list">
+
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
         <button type="button">Do some JS magic</button>
