@@ -14,41 +14,53 @@
 
     <form class="form" action="#" method="get">
         <!-- Содержимое формы -->
-        <label for="name">Name:
-            <input id="name" class="input" name="username" type="text" placeholder="Enter name" required
-                pattern="^[a-z0-9_-]{3,15}$">
-        </label>
-        <label>Password:
-            <input class="input" name="password" type="password" required
-                pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$" />
-        </label>
-        <label>Email
-            <input class="input" name="email" type="email">
-        </label>
-        <label for="is-adult">Вы совершеннолетний(я)?</label>
-        <input id="is-adult" type="checkbox" name="is-adult" value="yes">
-        <label>
-            <input type="radio" name="gender" value="male">
-            Male
-        </label>
-        <label>
-            <input type="radio" name="gender" value="female">
-            Female
-        </label>
+        <fieldset>
+            <legend>Auth data</legend>
+            <label for="name">Name:
+                <input id="name" class="input" name="username" type="text" placeholder="Enter name" required
+                    pattern="^[a-z0-9_-]{3,15}$" autofocus autocomplete="username">
+            </label>
+            <label>Password:
+                <input class="input" name="password" type="password" required
+                    pattern="^[a-zA-Z0-9]{3,15}@[a-z]{1,64}\.[a-z]{1,64}$" />
+            </label>
+            <label>Email
+                <input class="input" name="email" type="email">
+            </label>
+        </fieldset>
 
-        <select class="input" name="City" size="3">
-            <!-- <option value="value-to be sent to server">Description</option> -->
-            <optgroup label="Ukraine">
-                <option value="kyiv">Kyiv</option>
-                <option value="lviv">Lviv</option>
-                <option value="kharkiv">Kharkiv</option>
-                <option value="zaporizhzia">Zaporizhzia</option>
-            </optgroup>
+        <fieldset>
+            <legend>User data</legend>
+            <label for="is-adult">Вы совершеннолетний(я)?</label>
+            <input id="is-adult" type="checkbox" name="is-adult" value="yes">
+            <label>
 
-            <optgroup label="Poland">
-                <option value="warsaw">Warsaw</option>
-            </optgroup>
-        </select>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+
+            <label for="city">Choose your city:</label>
+            <select id="city" class="input" name="city">
+                <!-- <option value="value-to be sent to server">Description</option> -->
+                <optgroup label="Ukraine">
+                    <option value="kyiv">Kyiv</option>
+                    <option value="lviv">Lviv</option>
+                    <option value="kharkiv">Kharkiv</option>
+                    <option value="zaporizhzia">Zaporizhzia</option>
+                </optgroup>
+
+                <optgroup label="Poland">
+                    <option value="warsaw">Warsaw</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <label for="textarea">Post your comment</label>
+        <textarea name="textarea" id="" cols="30" rows="10" maxlength="5"></textarea>
 
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
