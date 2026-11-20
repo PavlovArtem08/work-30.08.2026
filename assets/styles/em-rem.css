@@ -1,6 +1,5 @@
 :root {
     --base-font-size: 20px;
-    --h1-font-size-multiplier: 2;
 }
 
 
@@ -9,5 +8,34 @@ body {
 }
 
 h1 {
-    font-size: calc(var(--base-font-size) * var(--h1-font-size-multiplier));
+    /* font-size: calc(var(--base-font-size) * var(--h1-font-size-multiplier)); */
+    font-size: 2em;
+    border: 2em solid black;
+    width: 10em;
+}
+
+ul {
+    font-size: 1em;
+}
+/* li {
+    font-size: 2em;
+}
+p {
+    font-size: 5em;
+}
+span {
+    font-size: 10em;
+} */
+
+h1 {
+    font-size: 2rem;
+}
+li {
+    font-size: 2rem;
+}
+p {
+    font-size: 5rem;
+}
+span {
+    font-size: 10rem;
 }
