@@ -9,9 +9,9 @@ body {
 
 h1 {
     /* font-size: calc(var(--base-font-size) * var(--h1-font-size-multiplier)); */
-    font-size: 2em;
+    /* font-size: 2em;
     border: 2em solid black;
-    width: 10em;
+    width: 10em; */
 }
 
 ul {
@@ -27,7 +27,7 @@ span {
     font-size: 10em;
 } */
 
-h1 {
+/* h1 {
     font-size: 2rem;
 }
 li {
@@ -38,4 +38,4 @@ p {
 }
 span {
     font-size: 10rem;
-}
+} */

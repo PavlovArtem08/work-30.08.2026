@@ -1,0 +1,29 @@
+@font-face {
+    /*format values: "woff", "woff2", "truetype", "opentype", "embedded-opentype", "svg". */
+    font-family: GreatVibes-Regular;
+    src: url('../fonts/Great_Vibes/GreatVibes-Regular.ttf') format('TrueType'),
+        url('../fonts/Great_Vibes/GreatVibes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GreatVibes-Regular;
+    src: url('../fonts/Great_Vibes/GreatVibes-Regular.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.main-heading {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.basic-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fancy-text {
+    font-family: GreatVibes-Regular;
+    font-style: italic;
+}
