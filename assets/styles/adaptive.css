@@ -1,4 +1,7 @@
 @import 'reset.css';
+@import "print-styles.css" print;
+@import "screen-styles.css" screen, speech;
+
 
 
 .header {
@@ -12,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .logo,
