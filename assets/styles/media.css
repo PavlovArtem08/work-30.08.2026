@@ -74,14 +74,15 @@ main {
     }
 }
 
-@media screen and (min-width: 800px), print {
+@media screen and (min-width: 800px),
+print {
     .article {
         background-color: red;
         color: blanchedalmond;
     }
 }
 
-@media screen and (max-width: 2440px) and (min-width: 1600px) {
+@media screen and (max-width: 2440px) and (min-width: 1600px) and (orientation: landscape) {
     .article {
         font-size: 2rem;
         font-weight: bold;
